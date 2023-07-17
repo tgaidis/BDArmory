@@ -25,10 +25,10 @@ namespace BDArmory.Targeting
         Transform eyeHolderTransform;
 
         [KSPField]
-        public float maxRayDistance = 15500;
+        public float maxRayDistance = 100000;
 
         [KSPField]
-        public float gimbalLimit = 120;
+        public float gimbalLimit = 160;
         public bool gimbalLimitReached;
 
         [KSPField]
@@ -46,7 +46,7 @@ namespace BDArmory.Targeting
         }
 
         [KSPField]
-        public string zoomFOVs = "40,15,3,1";
+        public string zoomFOVs = "100,40,15,3,1";
         float[] zoomFovs;
 
         [KSPField(isPersistant = true)]
